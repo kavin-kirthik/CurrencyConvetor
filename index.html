@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="convert" placeholder="from dollor to inr "><br>
+    <input type="text" id="convertToDirham" placeholder="from dirham">
+    <input type="text" id="EuroToInr" placeholder="euroToInr">
+    <br>
+    <button onclick="dollorToInr()">convert to Inr</button>
+    <button onclick="InrtoDirham()">convert to Dirham</button>
+    <button onclick="InrToEuro()">convert to Euro</button>
+    <p id="ans"></p>
+    <p id="ans1"></p>
+    <p id="ans2"></p>
+    <script>
+        function dollorToInr()
+        {
+            var inp=document.getElementById("convert").value;
+            var ans=document.getElementById("ans");
+            var res=inp*83.72;
+            ans.textContent=res;
+        }
+        function InrtoDirham()
+        {
+            var inp=document.getElementById("convertToDirham").value;
+            var ans=document.getElementById("ans1");
+            var res=inp*22.85;
+            ans.textContent=res;
+        }
+        function InrToEuro()
+        {
+            var inp=document.getElementById("EuroToInr").value;
+            var ans=document.getElementById("ans2");
+            var res=inp*91;
+            ans.textContent=res;
+        }
+        
+       
+
+    </script>
+</body>
+</html>
